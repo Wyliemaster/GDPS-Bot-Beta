@@ -203,7 +203,7 @@ module.exports = (bot, message) => {
                             }
                         }
                     }
-                    if (level['epic'] > 0) {
+                    if (level['epic'] == 1) {
                         switch (level['difficulty']) {
                             case '0':
                                 difficulty = levelconfig.LEVEL_DIFFICULTY['EpicNA'];
@@ -250,6 +250,56 @@ module.exports = (bot, message) => {
                             }
                         }
                     }
+
+                    if (level['epic'] == 2) {
+                        switch (level['difficulty']) {
+                            case '0':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryNA'];
+                                break;
+                            case '10':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryEasy'];
+                                break;
+                            case '20':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryNormal'];
+                                break;
+                            case '30':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryHard'];
+                                break;
+                            case '40':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryHarder'];
+                                break;
+                            case '50':
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryInsane'];
+                                break;
+                            default:
+                                difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryNA'];
+                                break;
+                        }
+                        if (level['auto'] == 1) {
+                            difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryAuto'];
+                        }
+                        else if (level['demon'] == 1) {
+                            switch (level['demondiff']) {
+                                case '3':
+                                    difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryEasyDemon'];
+                                    break;
+                                case '4':
+                                    difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryMediumDemon'];
+                                    break;
+                                case '5':
+                                    difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryInsaneDemon'];
+                                    break;
+                                case '6':
+                                    difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryExtremeDemon'];
+                                    break;
+                                default:
+                                    difficulty = levelconfig.LEVEL_DIFFICULTY['LegendaryHardDemon'];
+                                    break;
+                            }
+                        }
+                    }
+
+
                     let coins;
                     switch (level['coins']) {
                         case '1':

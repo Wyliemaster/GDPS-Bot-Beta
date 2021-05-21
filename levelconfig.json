@@ -35,6 +35,18 @@
         "EpicMediumDemon": "https://media.discordapp.net/attachments/753349180885565481/782668846892056576/mDemonEpic.png",
         "EpicHardDemon": "https://media.discordapp.net/attachments/753349180885565481/782668778655449128/demonEpic.png",
         "EpicInsaneDemon": "https://media.discordapp.net/attachments/753349180885565481/782668793981173760/iDemonEpic.png",
-        "EpicExtremeDemon": "https://media.discordapp.net/attachments/753349180885565481/782668785101307924/exDemonEpic.png"
+        "EpicExtremeDemon": "https://media.discordapp.net/attachments/753349180885565481/782668785101307924/exDemonEpic.png",
+        "LegendaryNA": "https://media.discordapp.net/attachments/807260925589192705/845369608650358804/LNA.png",
+        "LegendaryAuto": "https://media.discordapp.net/attachments/807260925589192705/845369530824917012/LAuto.png",
+        "LegendaryEasy": "https://media.discordapp.net/attachments/807260925589192705/845369535351357510/LEasy.png",
+        "LegendaryNormal": "https://media.discordapp.net/attachments/807260925589192705/845369883016953876/LNormal.png",
+        "LegendaryHard": "https://media.discordapp.net/attachments/807260925589192705/845369546747019304/LHard.png",
+        "LegendaryHarder": "https://media.discordapp.net/attachments/807260925589192705/845369550517043240/Lharder.png",
+        "LegendaryInsane": "https://media.discordapp.net/attachments/807260925589192705/845369556821606400/LInsane.png",
+        "LegendaryEasyDemon": "https://media.discordapp.net/attachments/807260925589192705/845369538958327838/LEDemon.png",
+        "LegendaryMediumDemon": "https://media.discordapp.net/attachments/807260925589192705/845369559627726868/LMDemon.png",
+        "LegendaryHardDemon": "https://media.discordapp.net/attachments/807260925589192705/845369533208592404/LDemon.png",
+        "LegendaryInsaneDemon": "https://media.discordapp.net/attachments/807260925589192705/845369553726472242/LIDemon.png",
+        "LegendaryExtremeDemon": "https://media.discordapp.net/attachments/807260925589192705/845369543181598760/LExDemon.png"
     }
 }
