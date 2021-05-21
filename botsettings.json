@@ -1,7 +1,7 @@
 {
     "setup": {
         "token": "Token",
-        "server": "gmdpseditor.7m.pl/database/",
+        "server": "gmdpseditor.7m.pl/database",
         "prefix": "w?",
         "commandColour": "FF0000",
         "customStatus": "Being coded",
