@@ -1,44 +1,44 @@
 {
     "setup": {
-        "token": "NzAzMjA5NjIzNTQ0NjYwMDQ4.XqLQ_w.AWKNBnIg1SQs5_OU5Tut5XUpLzo",
-        "server": "xcggdpsserver.xyz/database",
-        "prefix": "x?",
+        "token": "token",
+        "server": "wyliegdps02.7m.pl",
+        "prefix": "w?",
         "commandColour": "FF0000",
-        "customStatus": "XGDPS",
+        "customStatus": "Being coded",
         "cronEnabled": true,
         "cronCooldown": 300
     },
     "emotes": {
-        "star": "<:star:755866470663323719>",
-        "diamond": "<:diamond:755866470843678770>",
-        "secretCoin": "<:coin:755866470453346355>",
-        "userCoin": "<:usercoin:755866471162183680>",
-        "demon": "<:demon:755866470658998374>",
-        "cp": "<:cp:755866470809993387>",
+        "star": "<:GDstar:735563775209635972>",
+        "diamond": "<:diamond:694900098836070440>",
+        "secretCoin": "<:coin:694900098479554571>",
+        "userCoin": "<:usercoin:694900098815230024>",
+        "demon": "<:demon:694900098794258482>",
+        "cp": "<:cp:694900098890596402>",
         "mod": "<:mod:735560669096575036>",
         "elderMod": "<:elder:735560669117677608>",
-        "leaderboardRank": "<:rankIcon_top10_001:755866560844922981>",
-        "download": "<:downloads:755866471594328235>",
-        "like": "<:like:755866471006994473>",
-        "dislike": "<:dislike:755866470868582521>",
-        "length": "<:time:755866471099531264>",
-        "unrated": "<:norated:847530268557312010>",
-        "rated": "<:rated:847530268436987994>",
-        "featured": "<:feature:847530185536176148>",
-        "epic": "<:epic:847530140866969650>"
+        "leaderboardRank": "<:rank:755459364180983808>",
+        "download": "<:downloads:694900098982871080>",
+        "like": "<:like:694900098613903382>",
+        "dislike": "<:dislike:694900098890596362>",
+        "length": "<:length:735567666101878927>",
+        "unrated": "<:nostar:845354615733878835>",
+        "rated": "<:2DGDstar:845354615465705525>",
+        "featured": "<:featured:845355766856417340>",
+        "epic": "<:epic:845355809164623933>"
     },
     "devmode": false,
     "links": {
         "GDPSBrowser": {
-            "name": "XGDPS",
+            "name": "WGDPS",
             "exists": true,
-            "link": "https://xgdps.gdbrowser.com/"
+            "link": "https://wgdps.gdbrowser.com/"
         }
     },
     "rateLogs": {
         "enabled": true,
-        "rateChannel": "847530899054395442",
-        "difficultyColours": true,
+        "rateChannel": "844584605113122816",
+        "difficultyColours": false,
         "notificationsOn": false,
         "notificationRoleID": "845281385156706315",
         "rateMessages": [
@@ -49,6 +49,6 @@
     },
     "logs": {
         "enabled": true,
-        "channel": "765989349070209135"
+        "channel": "820031060469219348"
     }
 }
