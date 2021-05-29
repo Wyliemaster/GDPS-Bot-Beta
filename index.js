@@ -32,7 +32,7 @@ bot.on("message", async (message) => {
     if (!message.content.startsWith(prefix))
         return;
     let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)));
-    if (message.content == `${prefix}cron`) {
+    if (message.content.includes(`${prefix}cron`)) {
         if (Math.floor(Date.now() - time) < (botsettings.setup.cronCooldown * 1000)) {
             return message.channel.send(`Please wait \`${(((botsettings.setup.cronCooldown * 1000) - (Math.floor(Date.now() - time)))) / 1000}\` more seconds`);
         }
