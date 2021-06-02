@@ -46,6 +46,7 @@ module.exports.run = async (bot, message, args) => {
         ID = -2;
     request.post(`http://${botconfig.setup.server}/downloadGJLevel22.php`, {
         form: {
+            gameVersion: 21,
             levelID: ID,
             secret: "Wmdf2893gb7"
         }
@@ -243,8 +244,9 @@ module.exports.run = async (bot, message, args) => {
         }
         let user = data[3].split(':');
         let likeEmote;
+        let levelDescription = parse.decodeLevelDesc(level['description']);
         level['likes'] < 0 ? likeEmote = botconfig.emotes.dislike : likeEmote = botconfig.emotes.like;
-        const lvlEmbed = new Discord.MessageEmbed().setTitle(`__${level['levelName']}__ by __${user[1]}__`).setColor(`0x${botconfig.setup.commandColour}`).setFooter(`LevelID: ${level['levelID']} | DailyID: ${level['timelyID']} | Objects: ${level['objects']}`)
+        const lvlEmbed = new Discord.MessageEmbed().setTitle(`__${level['levelName']}__ by __${user[1]}__`).setColor(`0x${botconfig.setup.commandColour}`).setFooter(`LevelID: ${level['levelID']} | DailyID: ${level['timelyID']} | Objects: ${level['objects']}`).setDescription(levelDescription)
             .addField(`__Level Stats__`, `${botconfig.emotes.download} ${level['download']}\n${botconfig.emotes.star} ${level['stars']}\n${likeEmote} ${level['likes']}\n${botconfig.emotes.length} ${length}`)
             .setThumbnail(difficulty);
         message.channel.send(lvlEmbed);

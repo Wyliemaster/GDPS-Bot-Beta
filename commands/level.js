@@ -13,6 +13,7 @@ module.exports.run = async (bot, message, args) => {
     if (isID) {
         request.post(`http://${botconfig.setup.server}/downloadGJLevel22.php`, {
             form: {
+                gameVersion: 21,
                 levelID: args[0],
                 secret: "Wmdf2893gb7"
             }
@@ -247,14 +248,14 @@ module.exports.run = async (bot, message, args) => {
             let userData = levelInfo[3].split(':');
             let name;
             userData.length == 3 ? name = `by __${userData[1]}__` : name = '';
-            const lvlEmbed = new Discord.MessageEmbed().setTitle(`__${level['levelName']}__ ${name}`).setColor(colour).setFooter(`LevelID: ${level['levelID']} | Objects: ${level['objects']}`)
+            let levelDescription = parse.decodeLevelDesc(level['description']);
+            const lvlEmbed = new Discord.MessageEmbed().setTitle(`__${level['levelName']}__ ${name}`).setColor(colour).setFooter(`LevelID: ${level['levelID']} | Objects: ${level['objects']}`).setDescription(levelDescription)
                 .addField(`__Level Stats__`, `${botconfig.emotes.star} ${level['stars']}\n${botconfig.emotes.download} ${level['download']}\n${likeEmote} ${level['likes']}\n${botconfig.emotes.length} ${length}\n\n**Coins** ${coins}`)
                 .setThumbnail(difficulty);
             message.channel.send(lvlEmbed);
         });
     }
     else {
-        // message.channel.send(`name search yet to be implemented`)
         let cmdsplit = (message.content).split(' ')[0];
         let underscore = message.content.replace(/ /g, '_');
         let level = underscore.split(cmdsplit + '_')[1];
